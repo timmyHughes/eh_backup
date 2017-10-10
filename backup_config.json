@@ -1,0 +1,16 @@
+{
+	"backup": [
+		{
+			"server": "awseda",
+			"key":    "7ff3b1a326bc491482153342ff381137",
+			"type":   "runningconfig",
+			"node":   "node1"
+		},
+		{
+			"server": "awseda",
+			"key":    "7ff3b1a326bc491482153342ff381137",
+			"type":   "customizations",
+			"node":   "node1"
+		}
+	]
+}
