@@ -1,0 +1,22 @@
+{
+	"backup": [
+		{
+		    "server": "eda70",
+		    "key":    "3bf5b3216623424dae1764ba86d33745",
+		    "type":   "runningconfig",
+		    "node":   "eda70"
+		},
+		{
+		    "server": "exa70",
+		    "key":    "afb7b646a2cd4f79830da691c81bcdd6",
+		    "type":   "runningconfig",
+		    "node":   "exa70"
+		},
+		{
+		    "server": "eda70",
+		    "key":    "3bf5b3216623424dae1764ba86d33745",
+		    "type":   "customizations",
+		    "node":   "eda70"
+		}
+	]
+}
