@@ -1,58 +1,16 @@
 {
 	"backup": [
 		{
-		    "server": "awsECA",
-		    "key":   "441d2c5fe5a64845a72b5f8d518b4831",
-		    "type":   "runningconfig",
-		    "node":   "awsECA"
+			"server": "awseda",
+			"key":    "7ff3b1a326bc491482153342ff381137",
+			"type":   "runningconfig",
+			"node":   "node1"
 		},
 		{
-		    "server": "awsEDA",
-		    "key":    "f7eea8248e854638877f6b017bca3f0e",
-		    "type":   "runningconfig",
-		    "node":   "awsEDA"
-		},
-		{
-		    "server": "awsEXA",
-		    "key":    "4a8fbf6a43a542abbf32c1c8d044057e",
-		    "type":   "runningconfig",
-		    "node":   "awsEXA"
-		},
-		{
-		    "server": "awsETA",
-		    "key":    "586be1c61a4d4a088596c520278e1de6",
-		    "type":   "runningconfig",
-		    "node":   "awsETA"
-		},
-		{
-		    "server": "awsSEVM",
-		    "key":    "90ac0e9a998c415b9e05158d3045f438",
-		    "type":   "runningconfig",
-		    "node":   "awsSEVM"
-		},
-		{
-		    "server": "awsSEVMEXA",
-		    "key":    "4d5b2d211635412e916351663800b5da",
-		    "type":   "runningconfig",
-		    "node":   "awsSEVMEXA"
-		},
-		{
-		    "server": "awsECA",
-		    "key":   "441d2c5fe5a64845a72b5f8d518b4831",
-		    "type":   "customizations",
-		    "node":   "awsECA"
-		},
-		{
-		    "server": "awsEDA",
-		    "key":    "f7eea8248e854638877f6b017bca3f0e",
-		    "type":   "customizations",
-		    "node":   "awsEDA"
-		},
-		{
-		    "server": "awsSEVM",
-		    "key":    "90ac0e9a998c415b9e05158d3045f438",
-		    "type":   "customizations",
-		    "node":   "awsSEVM"
+			"server": "awseda",
+			"key":    "7ff3b1a326bc491482153342ff381137",
+			"type":   "customizations",
+			"node":   "node1"
 		}
 	]
 }

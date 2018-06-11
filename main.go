@@ -6,7 +6,7 @@ import (
 	"crypto/tls"
 	"encoding/json"
 	"fmt"
-	"io"
+	//	"io"
 	"io/ioutil"
 	"net/http"
 	"os"
@@ -172,7 +172,12 @@ func loopBackups(backup Backup) {
 		fmt.Println("GET Error: " + err.Error())
 	} else {
 		defer rsp.Body.Close()
-		_, err := io.Copy(f, rsp.Body)
+		body, _ := ioutil.ReadAll(rsp.Body)
+		var j interface{}
+		err := json.Unmarshal(body, &j)
+		check(err)
+		s, _ := json.MarshalIndent(j, "", "    ")
+		err = ioutil.WriteFile(file, s, 0644)
 		check(err)
 	}
 	fmt.Printf("Wrote backup to: %v\n", file)
@@ -191,3 +196,9 @@ func debugPrint(location string, obj interface{}) {
 	os.Stdout.Write(z)
 	fmt.Println("")
 }
+
+/*
+GOOS=windows GOARCH=amd64 go build -o bin/eh_backup_x64.exe main.go
+GOOS=windows GOARCH=386 go build -o bin/eh_backup_x86.exe main.go
+go build -o bin/eh_backup main.go
+*/
